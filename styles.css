@@ -30,7 +30,17 @@ a {
 }
 
 .cv_styles {
-  background-color: black;
+  background-color: white;
+  color: black;
+}
+
+.photo {
+  text-align: center;
+  padding-top: 25px;
+}
+
+._photo {
+  border-radius: 50%;
 }
 
 ::selection {
