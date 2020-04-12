@@ -34,6 +34,10 @@ a {
   color: black;
 }
 
+.cv_styles::selection {
+  color: black;
+}
+
 .photo {
   text-align: center;
   padding-top: 25px;
