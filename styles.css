@@ -43,9 +43,9 @@ a {
   padding-top: 25px;
 }
 
-._photo {
+/* ._photo {
   border-radius: 50%;
-}
+} */
 
 ::selection {
   color: orange;
