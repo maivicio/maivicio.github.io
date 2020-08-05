@@ -1,6 +1,9 @@
-html, body {
-  box-sizing: border-box;
-  display: block;
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -21,32 +24,101 @@ a {
   text-decoration: none;
 }
 
-.content {
-  padding-top: 140px;
+img {
+  color: #fff;
 }
 
-.highlight {
-  color: orange;
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #cccccc;
+    text-align: center;
+    margin: 30px 0;
 }
+
+.container {
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#gallery {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#gallery:after { 
+   content: '';
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
 
 .cv_styles {
   background-color: white;
   color: black;
 }
 
-.cv_styles::selection {
-  color: black;
-}
-
-.photo {
+._photo {
   text-align: center;
   padding-top: 25px;
 }
 
-/* ._photo {
-  border-radius: 50%;
-} */
+.photo {
+  float: left;
+  width: 33.333333%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+}
+.photo a:hover {
+    opacity: 0.5;
+}
+.photo a {
+    display: block;
+    position: relative;
+}
+
+.photo:hover> a:after {
+    visibility: visible;
+}
+
+.photo figcaption {
+    color: #999999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*???????????*/
+.covers {
+    padding-bottom: 0px;
+    padding-top: 260px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.highlight {
+  color: orange;
+}
 
 ::selection {
   color: orange;
+}
+
+.cv_styles::selection {
+  color: black;
 }

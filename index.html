@@ -1,27 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>gleb melyanovskiy | curriculum vitae</title>
+  <title>Gleb Melyanovskiy</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC">
 </head>
 <body>
-  <div class="content">
+  <div class="container">
     <p>Hi everyone!</p>
-    <p>My name is <span class="highlight">Gleb</span> and I'm <span class="highlight">full-stack developer.</span></p>
+    <p>Welcome to <span class="highlight">my site portfolio</span> here you find my work lately.</p>
+    <p>My name is <span class="highlight">Gleb</span> and I'm <span class="cv_styles">3D Artist | Low poly | Hard Surface</span>.</p>
     <p>Instead many words check <a href="#"><span class="cv_styles">my resume [CV]</span></a></p>
-    <div class="photo">
-      <img src="photo.jpg" alt="Avatar" class="_photo" title="" width="300" height="400">
+    <!-- <div class="_photo">
+      <img src="photo.jpg" alt="Avatar" title="" width="300" height="400">
+    </div> -->
+    <div class="content">
+      <div id="gallery">
+
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        <figure class="photo">
+          <a href="img/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="img/img-01-min.jpg" alt="Eagle" /></a>
+        </figure>
+        
+      </div>
     </div>
+
     <p id="year"></p>
     <script>
       y = new Date()
       document.getElementById('year').innerHTML = y.getFullYear()
     </script>
   </div>
+
+  <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+
 </body>
 </html>
